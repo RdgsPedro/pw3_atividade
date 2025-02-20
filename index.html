@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
 </head>
 <body>
-
-    <main class="main__login">
-        <h1 class="nome__tushu">Tushu Akashic</h1>
-
-            <img src="img/toshu__menu.png" alt="logo" class="imagem__logo">
-
-                <label for="registro" class="icone__texto">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" id="registro" name="registro" placeholder="Registro" class="text">
-                </label>
-
-                <label for="senha" class="icone__texto segundo">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="senha" name="senha" placeholder="Senha" class="text">
-                </label>
-                
-                <a href="Home.php" class="Rest__senha">Esqueci minha senha</a>
-                <button type="submit" class="botao__form">Entrar</button>
-        </form>
+    <main class="main-login">
+        <div class="left">
+            <img src="/imagens/inovagame.svg" alt="inovagame" class="image">
+        </div>
+        <div class="rigth  ">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Usuário</div>
+                </div>
+                <div class="entryarea">
+                    <input type="password" required>
+                    <div class="labelline">Senha</div>
+                </div>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
     </main>
-
 </body>
 </html>

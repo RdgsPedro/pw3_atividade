@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap');
+
+:root{
+    --cor--principal: #f7f8fc;
+    --cor--secundaria: #5a7f78;
+    --cor--light: #bbdec6;
+    --cor--card: #314c53;
+    --cor--sombra: #00000056;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-login{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--cor--principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rigth > h1{
+    color: var(--cor--secundaria);
+}
+
+.rigth{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 35px;
+    background-color: var(--cor--card);
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px var(--cor--sombra);
+}
+
+.card-login > h1{
+    color: var(--cor--secundaria);
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.entryarea{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    line-height: 80px;
+    color: var(--cor--light);
+    display: flex;
+    
+}
+
+.entryarea > input{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1.2em;
+    padding: 0 20px;
+    line-height: 70px;
+    border-radius: 10px;
+
+    border: solid var(--cor--light);
+    background-color: transparent;
+    color: var(--cor--light);
+    box-sizing: border-box;
+    transition: 0.1s ease;
+    z-index: 1111;
+
+    
+}
+
+.labelline{
+    position: absolute;
+    font-size: 1.2em;
+    color: var(--cor--light);
+    padding: 0 25px;
+    margin: 0 20px;
+    background-color: var(--cor--card);
+    transition: 0.2s ease;
+}
+
+input:focus,
+input:valid{
+    color: #66ff00;
+    border: 4px solid #66ff00;
+}
+
+input:focus + .labelline,
+input:valid + .labelline{
+    color: #66ff00;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}
+
+
+.btn-login{
+    width: 60%;
+    padding: 20px 0px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--cor--principal);
+    background-color: var(--cor--secundaria);
+    cursor: pointer;
+    box-sizing: 0px 10px 40px -12px var(--cor--secundaria);
+}
+
+.image{
+    width: 35vw;
+}
