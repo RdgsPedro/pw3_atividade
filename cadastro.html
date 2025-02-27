@@ -1,99 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Cadastro
-    </title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
 </head>
 
 <body>
-    <style>
-        td {
-            border: solid red 1px;
-        }
 
-        th {
-            border: solid red 1px;
-        }
+    <main class="main-cadastro">
+        <div class="side-cadastro">
+            <div class="card-cadastro">
+                <h1>Cadastro</h1>
 
-        tr {
-            border: solid red 1px;
-        }
-    </style>
-    <form>
-        codigo
-        <input type="text">
-        </input>
-        <br>
-        nome
-        <input type="text">
-        </input>
-        <br>
-        data_lancamento
-        <input type="text">
-        </input>
-        <br>
-        Genero
-        <input type="text">
-        </input>
-        <br>
-        Empresa
-        <input type="text">
-        </input>
-        <br>
-        <button>
-            Excluir
-        </button>
-        <button>
-            Enviar
-        </button>
-    </form>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Nome</div>
+                </div>
 
-    <div>
-        <table>
-            <tr>
-                ID
-            </tr>
-            <tr>
-                Nome
-            </tr>
-            <tr>
-                Lancamento
-            </tr>
-            <tr>
-                Genero
-            </tr>
-            <tr>
-                Empresa
-            </tr>
-            <td>
-                1
-            </td>
-            <td>
-                Star Wars
-            </td>
-            <td>
-                1931
-            </td>
-            <td>
-                Acao
-            </td>
-            <td>
-                Lucasfilm
-            </td>
-            <td>
-                <button>Excluir</button>
-            </td>
-            <td>
-                <button>
-                    Editar
-                </button>
-            </td>
-        </table>
-    </div>
+                <div class="entryarea">
+                    <input type="date" required class="date-input">
+                    <div class="labelline date-labelline">Data de lançamento</div>
+                </div>
+
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Genero</div>
+                </div>
+
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Empresa</div>
+                </div>
+
+                <div class="buttons-form">
+                    <button class="btn btn-cadastrar">Cadastrar</button>
+                    <button class="btn btn-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-table">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Lançamento</th>
+                    <th>Gênero</th>
+                    <th>Empresa</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Star Wars</td>
+                    <td>1931</td>
+                    <td>Ação</td>
+                    <td>Lucasfilm</td>
+                    <td class="botao_td">
+                        <button class="btn-delete">Excluir</button>
+                        <button class="btn-edit">Editar</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
 </body>
 
 </html>
